@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hamburguesas",
+    "descripcion": "Hamburguesas artesanales a la parrilla",
+    "eliminado": false
+  },
+  {
+    "id": 2,
+    "nombre": "Pizzas",
+    "descripcion": "Pizzas a la piedra con masa madre",
+    "eliminado": false
+  },
+  {
+    "id": 3,
+    "nombre": "Bebidas",
+    "descripcion": "Gaseosas, aguas y jugos naturales",
+    "eliminado": false
+  }
+]

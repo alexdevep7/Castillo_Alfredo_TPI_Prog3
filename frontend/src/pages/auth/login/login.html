@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Food Store</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      body {
+        background-color: #f7eae0;
+        color: #5e3122;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .auth-container {
+        background-color: #1d4533;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(29, 69, 51, 0.2);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+      }
+      .auth-container h2 {
+        color: #f7eae0;
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+      }
+
+      .input-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      .input-group label {
+        display: block;
+        color: #f9d2ba;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+      }
+      .input-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: 8px;
+        border: 1px solid rgba(249, 210, 186, 0.3);
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        font-size: 1rem;
+        outline: none;
+        transition: border 0.2s;
+      }
+      .input-group input:focus {
+        border-color: #f9d2ba;
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+      .input-group input::placeholder {
+        color: rgba(249, 210, 186, 0.5);
+      }
+
+      button[type="submit"] {
+        width: 100%;
+        background-color: #f9d2ba;
+        color: #1d4533;
+        border: none;
+        padding: 14px;
+        border-radius: 8px;
+        font-size: 1.05rem;
+        font-weight: 700;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background 0.2s;
+      }
+      button[type="submit"]:hover {
+        background-color: white;
+      }
+
+      p {
+        margin-top: 25px;
+        font-size: 0.9rem;
+        color: #f7eae0;
+      }
+      p a {
+        color: #f9d2ba;
+        text-decoration: none;
+        font-weight: 600;
+        margin-left: 5px;
+      }
+      p a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="auth-container">
+      <h2>Iniciar Sesión</h2>
+      <form id="form-login">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="correo@ejemplo.com"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="password">Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Tu contraseña"
+            required
+          />
+        </div>
+        <button type="submit">Ingresar</button>
+      </form>
+      <p>
+        ¿No tienes cuenta?
+        <a href="/src/pages/auth/registro/registro.html">Regístrate</a>
+      </p>
+    </div>
+    <script type="module" src="./login.ts"></script>
+  </body>
+</html>

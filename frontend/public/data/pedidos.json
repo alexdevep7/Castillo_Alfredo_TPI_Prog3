@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "fecha": "2026-11-19",
+    "estado": "TERMINADO",
+    "formaPago": "TARJETA",
+    "total": 11000,
+    "usuarioId": 2,
+    "eliminado": false,
+    "detalles": [
+      {
+        "id": 1,
+        "cantidad": 1,
+        "subtotal": 8500,
+        "productoId": 1
+      },
+      {
+        "id": 2,
+        "cantidad": 1,
+        "subtotal": 2500,
+        "productoId": 4
+      }
+    ]
+  }
+]
